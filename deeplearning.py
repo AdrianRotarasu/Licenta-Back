@@ -9,13 +9,10 @@ from ultralytics import YOLO
 from roboflow import Roboflow
 from flask_cors import CORS
 
-rf = Roboflow(api_key="Bv81WfXp2nY9ZIi2UdH6")
-project = rf.workspace().project("vehicle-registartion-plate-finder")
-
-modelRf = project.version(2).model
+#rf = Roboflow(api_key="Bv81WfXp2nY9ZIi2UdH6")
+#project = rf.workspace().project("vehicle-registartion-plate-finder")
+#modelRf = project.version(2).model
 modelYolov8 = YOLO('./static/models/yolov8v2.pt')
-modelInceptionResnetv2 = tf.keras.models.load_model('./static/models/object_detection_decay.h5')
-
 
 
 

@@ -1,0 +1,12 @@
+Flask
+Flask_Cors
+matplotlib
+numpy
+opencv_python
+Pillow
+Pillow
+pytesseract
+roboflow
+tensorflow
+tensorflow_intel
+ultralytics

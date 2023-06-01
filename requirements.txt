@@ -1,11 +1,12 @@
-umpy as np
-cv2
-matplotlib.pyplot as plt
-tensorflow as tf
-from tensorflow.keras.preprocessing.image import load_img, img_to_array
-pytesseract as pt
-PIL import Image, ImageFilter
-ultralytics import YOLO
-roboflow import Roboflow
-flask_cors import CORS
-uvicorn
+Flask==2.2.5
+Flask_Cors==3.0.10
+matplotlib==3.5.3
+numpy==1.21.6
+opencv_python==4.7.0.72
+Pillow==9.5.0
+Pillow==9.5.0
+pytesseract==0.3.10
+roboflow==1.0.9
+tensorflow==2.4.0
+tensorflow_intel==2.11.0
+ultralytics==8.0.111

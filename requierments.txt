@@ -1,4 +1,4 @@
-uvicorn
+uvicorn==0.22.0
 certifi
 charset-normalizer
 click

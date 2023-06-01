@@ -7,7 +7,4 @@ ultralytics
 uvicorn
 fastapi
 python-multipart
-tensorflow
-roboflow
-flask
-flask_cors
+

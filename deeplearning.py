@@ -1,13 +1,9 @@
 import numpy as np
-#import cv2
 import matplotlib.pyplot as plt
-import tensorflow as tf
-from tensorflow.keras.preprocessing.image import load_img, img_to_array
 import pytesseract as pt
 from PIL import Image, ImageFilter
 from ultralytics import YOLO
-from roboflow import Roboflow
-from flask_cors import CORS
+
 
 #rf = Roboflow(api_key="Bv81WfXp2nY9ZIi2UdH6")
 #project = rf.workspace().project("vehicle-registartion-plate-finder")

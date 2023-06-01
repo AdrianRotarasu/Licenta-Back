@@ -11,3 +11,4 @@ tensorflow
 tensorflow_intel
 ultralytics
 uvicorn
+cv2

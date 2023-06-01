@@ -1,0 +1,11 @@
+umpy as np
+cv2
+matplotlib.pyplot as plt
+tensorflow as tf
+from tensorflow.keras.preprocessing.image import load_img, img_to_array
+pytesseract as pt
+PIL import Image, ImageFilter
+ultralytics import YOLO
+roboflow import Roboflow
+flask_cors import CORS
+uvicorn

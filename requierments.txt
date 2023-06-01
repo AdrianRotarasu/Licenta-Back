@@ -1,4 +1,4 @@
-﻿anyio
+uvicorn
 certifi
 charset-normalizer
 click
@@ -45,5 +45,5 @@ ultralytics
 urllib3
 uvicorn
 python-multipart
-'uvicorn[standard]'
+
 

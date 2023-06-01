@@ -1,0 +1,58 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <div class="container">
+        <br><br>
+        <form action="#" method="POST" enctype="multipart/form-data">
+            <div class="input-group">
+                <input type="file" class="form-control" name="image_name" required>
+                <input type="submit" value="Upload" class="btn btn-outline-secondary">
+                
+            </div>
+        </form>
+    </div>
+
+    {% if upload %}
+        <div class="container">
+            
+            <br><br>
+            <table width="100%" >
+                <tr>
+                    <td>
+                        <img  width="100%" height="100%" class="rounded float-left img-fluid" src="/static/predict/{{ upload_image }}" alt="">
+                    </td>
+                    <td>
+                        <img  width="100%" height="100%" class="rounded float-right img-fluid" src="/static/modified_uploads/{{ upload_image }}" alt="">
+                    </td>
+                </tr>
+
+            </table>
+            <br><br>
+        </div>
+        <div class="d-flex justify-content-center">
+            <a href="/static/modified_uploads/{{ upload_image }}" download >
+                <input type="submit" value="Download Blurred Image" class="btn btn-outline-secondary">
+            </a>
+            <br><br> 
+        </div>
+        <div>
+            
+            <table style="border: solid black; width: 30%;margin-left: auto; margin-right: auto; ">
+                <tr style="border: solid black;">
+                    <th>Cropped Licence Plate Image</th>
+                    <th>Text</th>
+                </tr>
+                <tr style="border: solid black;">
+                    <td>
+                        <img class="img-fluid" src="/static/roi/{{ upload_image }}" alt="">
+                    </td>
+                    <td style="background-color: gray; text-align: center;">
+                        <h1 class="display-8" > {{ text }}</h1>
+                    </td>
+
+                </tr>
+            </table>
+        </div>
+    {% endif %}
+
+{% endblock  %}

@@ -17,8 +17,8 @@ matplotlib
 
 
 numpy
-opencv
-opencv-python
+
+
 
 pandas
 Pillow

@@ -10,3 +10,4 @@ roboflow
 tensorflow
 tensorflow_intel
 ultralytics
+uvicorn

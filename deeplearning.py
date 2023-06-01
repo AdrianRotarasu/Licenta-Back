@@ -1,5 +1,5 @@
 import numpy as np
-import cv2
+#import cv2
 import matplotlib.pyplot as plt
 import tensorflow as tf
 from tensorflow.keras.preprocessing.image import load_img, img_to_array
@@ -33,8 +33,8 @@ def modify(path, filename):
         crop = image.crop((xmin, ymin, xmax, ymax))
         image.paste(crop.filter(ImageFilter.GaussianBlur(20)), (xmin, ymin))
   
-        roi = img[ymin:ymax, xmin:xmax]
-        roi_bgr = cv2.cvtColor(roi, cv2.COLOR_RGB2BGR)
+        #roi = img[ymin:ymax, xmin:xmax]
+        #roi_bgr = cv2.cvtColor(roi, cv2.COLOR_RGB2BGR)
         # cv2.imwrite('./static/roi/{}'.format(filename), roi_bgr)
     image = image.save('./static/modified_uploads/{}'.format(filename))
     text="abc"

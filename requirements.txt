@@ -1,7 +1,6 @@
 matplotlib
 numpy
 Pillow
-Pillow
 pytesseract
 ultralytics
 uvicorn

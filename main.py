@@ -3,6 +3,7 @@ from deeplearning import modify
 from fastapi import FastAPI, File, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
+import uvicorn
 
 app = FastAPI()
 
@@ -40,6 +41,4 @@ async def get_uploaded_file(filename):
 
 
 if __name__ == "__main__":
-    import uvicorn
-
     uvicorn.run(app, host="127.0.0.1", port=8000)

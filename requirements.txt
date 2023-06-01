@@ -1,9 +1,0 @@
-matplotlib
-numpy
-Pillow
-pytesseract
-ultralytics
-uvicorn
-fastapi
-python-multipart
-
